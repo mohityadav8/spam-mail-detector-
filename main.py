@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 import tkinter as tk
 from tkinter import messagebox
-
+ 
 # ---------------------------
 # 1. Load Dataset
 # ---------------------------
@@ -79,3 +79,4 @@ check_button = tk.Button(root, text="Check Spam", font=("Arial", 12), command=ch
 check_button.pack(pady=15)
 
 root.mainloop()
+
