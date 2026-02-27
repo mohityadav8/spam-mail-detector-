@@ -17,7 +17,7 @@ mail_data = mail_data.where(pd.notnull(mail_data), "")
 mail_data.loc[mail_data['Category'] == 'spam', 'Category'] = 0
 mail_data.loc[mail_data['Category'] == 'ham',  'Category'] = 1
 
-X = mail_data['Message']
+X = mail_data['Messgae']
 Y = mail_data['Category'].astype(int)
 
 # ---------------------------
@@ -79,4 +79,5 @@ check_button = tk.Button(root, text="Check Spam", font=("Arial", 12), command=ch
 check_button.pack(pady=15)
 
 root.mainloop()
+
 
